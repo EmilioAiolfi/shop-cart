@@ -1,0 +1,28 @@
+
+
+%app-content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+%app-content-holder {
+  max-width: 1280px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+%flexbox-row {
+  flex-direction: row;
+}
+
+%flexbox-container-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  @extend %flexbox-row;
+}
