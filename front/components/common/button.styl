@@ -1,0 +1,32 @@
+.button
+	background: none
+	border: none
+	padding: 10px
+	border-radius: 5px
+	outline: none
+	cursor: pointer
+	opacity: .9
+	transition: opacity .5s
+	text-transform: uppercase
+
+	&:hover
+		opacity: 1
+
+	&.-light
+		color: #fff
+
+	&.-primary
+		background-color: primary-color
+		color: light-color
+
+	&.-hamburguer
+		line-height: 0
+		font-size: 0
+		&:before
+			content:'☰'
+			font-size: 30px
+			display: block
+			padding: 10px 12px
+			line-height: 30px
+			border-radius: 100%
+			background-color: primary-color
