@@ -1,0 +1,35 @@
+.gallery
+	width: landscape
+	margin: 20px auto
+
+	.grid-list
+		grid( 4, 40px )
+		li
+			vertical-align: top
+			margin-bottom: 40px
+
+@media (max-width: landscape)
+	.gallery
+		width: portrait
+
+		.grid-list
+			grid( 3, 40px )
+
+@media (max-width: portrait)
+	.gallery
+		width: smartphone
+
+		.grid-list
+			grid( 3, 20px )
+			li
+				margin-bottom: 20px
+
+@media (max-width: smartphone)
+	.gallery
+		width: auto
+		margin: 20px 10px
+
+		.grid-list
+			grid( 2, 20px )
+			li
+				margin-bottom: 20px

@@ -1,0 +1,57 @@
+.cart
+	position: fixed
+	right: 0
+	top: 0
+	width: 300px
+	height: 100%
+	background-color: dark-color
+	transform: translateX( 100% )
+	transition: transform .2s ease-out
+
+	&.-open
+		transform: translateX( 0 )
+
+	.-hamburguer
+		position: fixed
+		top: -8px
+		z-index: 2
+		transform: translateX( -130% )
+
+	.title
+		padding: 25px
+		text-align: center
+		font-size: 30px
+
+	.subtitle
+		text-align: center
+		color: light-color
+
+	.items
+		width: 80%
+		margin: 0 auto
+
+		li
+			padding: 5px 23px
+			background-color: primary-color
+			color: light-color
+			margin: 0 0 10px
+			overflow: hidden
+			border-radius : 4px
+			box-shadow: 1px 2px 2px #333
+
+	.qtd
+		float: left
+		margin: 15px 0 0
+
+
+	.form-remove
+		float: right
+		line-height: 0
+
+		.button
+			font-size: 0
+			color: light-color
+			&:after
+				content: '✕'
+				font-size: 20px
+				display: block
