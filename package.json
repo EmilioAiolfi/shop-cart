@@ -5,10 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:js:dev": "webpack --watch --dev",
-    "watch:js": "webpack --watch",
-    "watch:css": "stylus -w front/apps/**/* --out dist/css",
-    "watch": "webpack --watch"
+    "start": "webpack --watch"
   },
   "author": "Javiani",
   "license": "MIT",
